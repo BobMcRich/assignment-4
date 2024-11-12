@@ -1,5 +1,5 @@
 <script setup>
-import CosineLaw from "'./components/Pythagorean.vue';" it links to conesine
+//import CosineLaw from "'./components/Pythagorean.vue';"
 </script>
 
 <template>
@@ -31,6 +31,14 @@ import CosineLaw from "'./components/Pythagorean.vue';" it links to conesine
         <input type="text" id="result2" placeholder="" readonly>
             
         <button id="calculateButton1" type="button">Calculate</button>
+    </div>
+    <div class="GregoryLeibniz">
+        <h2>Gregory-Leibniz</h2>
+        <label for="nValue2">n Value:</label>
+        <input type="number" id="nValue2" placeholder="">
+        <label for="result3">Result:</label>
+        <input type="number" id="result3" placeholder="" readonly>
+        <button id="calculateButton2" type="button">Calculate</button>
     </div>
 </template>
 
