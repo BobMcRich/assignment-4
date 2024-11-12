@@ -1,30 +1,39 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import CosineLaw from "'./components/Pythagorean.vue';" it links to conesine
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    <div class="CosineLaw">
+        <h2>Cosine Law Calculator</h2>
+        <label for="sideA">Length of side A:</label>
+        <input type="number" id="sideA" placeholder="">
+            
+        <label for="sideB">Length of side B:</label>
+        <input type="number" id="sideB" placeholder="">
+            
+        <label for="angleC">Angle C (degrees):</label>
+        <input type="number" id="angleC" placeholder="">
+            
+        <label for="result">Result:</label>
+        <input type="number" id="result" placeholder="" readonly>
+            
+        <button id="calculateButton" type="button">Calculate</button>
+    </div>
+    <div class="Asymptote">
+        <h2>Asymptote Calculator</h2>
+        <label for="nValue1">n Value:</label>
+        <input type="number" id="nValue1" placeholder="">
+            
+        <label for="mValue">m Value:</label>
+        <input type="number" id="mValue" placeholder="">
+            
+        <label for="result2">Result:</label>
+        <input type="text" id="result2" placeholder="" readonly>
+            
+        <button id="calculateButton1" type="button">Calculate</button>
+    </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>
